@@ -29,7 +29,7 @@ public class BookTag implements Comparable<BookTag>{
 		/* COMPLETE */
 
 		
-		return -1; //TODO: Change this!
+		return 0; //TODO: Change this!
 	}
 	
 	@Override
