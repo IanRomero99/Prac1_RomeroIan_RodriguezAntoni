@@ -19,7 +19,19 @@ public class BookTag implements Comparable<BookTag>{
 	
 	@Override
 	public int compareTo(BookTag other) {
-		
+		int cmp = this.left.compareTo(other.left);
+		int cmp2 = this.right.compareTo(other.right);
+		if (cmp<0) return 1;
+		else if (cmp==0) {
+			if (this.mid < other.mid) return 1;
+			else if (this.mid == other.mid) {
+				if(cmp2>0) return 1;
+				else if (cmp2 == 0);
+			}
+		}
+		else return -1;
+
+
 		/* Booktags are sorted as follows:
 		 	- first go booktags with lowest left attribute. If left attributes cannot discriminate...
 		 	- ... first go booktags with the lowest mid attribute. If mid cannot discriminate...
